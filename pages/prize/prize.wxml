@@ -1,0 +1,23 @@
+<!--prize.wxml-->  
+<view>
+    <block wx:for="{{myPrizeList}}" wx:key="unique">
+      <view class="prizeItem">
+        <view class="btBorder">
+          <view class="prizePic">
+            <image src="https://www.leiyi.club/img/jsy/prize.jpg"></image>
+          </view>
+          <view class="prizeInfo">
+            <text class="theme">{{item.titil}}</text>
+            <view>抽奖结果：<span class="">中奖</span></view>
+            <button class="getPrize" >{{item.status=='0'?'领取':'已领'}}</button>
+          </view>
+        </view>
+        <!--<view class="getShij">
+            <view class="time">
+              <text>{{item.prizeTime}}</text>
+            </view>
+            
+        </view>-->
+      </view>
+    </block>
+</view>

@@ -1,0 +1,44 @@
+<!--
+<view class="header">
+
+    <view class="header_type">
+        <view class="header_type_item active">销量</view>
+        <view class="header_type_item">价格</view>
+        <view class="header_type_item">最新</view>
+        <view class="header_type_item">好评</view>
+    </view>
+    <view class="header_word"> 
+         <view class="header_word_content"> 
+            <image src="../../images/search.jpg"></image>
+            <view class="header_word_input">
+                <input type="text" placeholder="输入你想要买的东西" placeholder-style="color:#b4b8cc;"/>
+            </view>
+         </view>
+         <button class="header_word_btn">搜索</button>
+     </view>
+</view>
+-->
+<scroll-view class="content-wrap" scroll-y="true" scroll-into-view="J_detail" scroll-with-animation="true">
+   <view class="wine_list">
+        <block wx:for="{{wineList}}" wx:key="unique"> 
+              <navigator url="../wineDetail/wineDetail?productId={{item.pid}}">
+                    <view class="record_item">
+                        <view class="record_item_img">  
+                            <image src="{{item.productImg}}"></image>
+                        </view>
+                        <view class="record_item_text">  
+                            <view class="record_item_text2"><text>{{item.productName}}</text></view>
+                            <view class="record_item_text1"><text>￥{{item.price}}</text></view>
+                        </view>
+                    </view>
+                </navigator>
+        </block>   
+    </view>
+    <view class="no_event" hidden="{{isNoData}}">
+        <button type="" loading="{{loading}}" disabled="{{disabled}}" bindtap="showMore" >{{loadText}}</button> 
+    </view>
+    <view class="no_event">{{isNoData}}</view>
+</scroll-view>
+<!--底部导航-->
+    <import src="../footer/footer.wxml" />
+    <template is="footer" data="{{...footerConfig}}"/>

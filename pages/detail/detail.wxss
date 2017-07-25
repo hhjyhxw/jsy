@@ -1,0 +1,101 @@
+/* pages/detail/detail.wxss */
+
+.headAdv{
+  width: 100%;
+  border-bottom: 14rpx solid #F2F2F2;
+  overflow: hidden;
+}
+
+.advImg{
+  width: 100%;
+  height: 620rpx;
+}
+.advImg image{
+  width: 100%;
+  height: 100%;
+}
+.advInfo{
+  padding:30rpx 40rpx;
+}
+.advInfo text{
+  font-size: 28rpx;
+  color: #080808;
+  display: block;
+  margin-bottom: 30rpx;
+}
+.advInfo span{
+  display: block;
+  color: #E40D15;
+  font-size: 28rpx;
+}
+.detailWord{
+  padding:0 20rpx;
+  margin-bottom: 50rpx;
+}
+.detailWord .dTop{
+  height: 72rpx;
+  line-height: 72rpx;
+  color: #000;
+  border-bottom:2rpx solid #F4F4F4;
+  display: block;
+  font-size: 28rpx;
+}
+.detailWord text:nth-of-type(2){
+  font-size: 28rpx;
+}
+.cpShow{
+  overflow: hidden
+}
+.cpHead{
+  width: 100%;
+  height: 48rpx;
+  line-height: 48rpx;
+  background: #D10F06;
+  padding:0 20rpx;
+  overflow: hidden;
+}
+.cpHead text{
+  color: #fff;
+  font-size: 32rpx;
+}
+.cpCon{
+  padding:10rpx 50rpx 30rpx 50rpx;
+  overflow: hidden;
+}
+.leftImg{
+  float: left;
+  width: 244rpx;
+  height: 340rpx;
+  border: 2rpx solid #828282;
+  border-radius: 10rpx;
+  padding:4rpx;
+}
+.leftImg image{
+  width: 100%;
+  height: 100%;
+}
+.rightInfo{
+  float: left;
+  margin-left: 40rpx;
+}
+.rightInfo .cu{
+  font-weight: bold;
+}
+.rightInfo .da{
+  font-size: 24rpx;
+}
+.rightInfo text{
+  display: block;
+  font-size:20rpx ;
+  color:#484848 ;
+  line-height: 40rpx;
+}
+.zsImg{
+  width: 750rpx;
+  height: 980rpx;
+  overflow: hidden
+}
+.zsImg image{
+  width: 100%;
+  height: 100%;
+}

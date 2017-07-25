@@ -1,0 +1,455 @@
+textarea{
+  position:static;
+}
+page {
+  height: 100%;
+  padding-bottom: 0;
+  
+}
+.page_fix_header{
+  position: fixed;
+  height:640rpx;
+  width: 100%;
+  background-image: url(https://www.leiyi.club/img/jsy/wedding_photo_bg.png);
+  background-size: 750rpx 640rpx;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 888;
+}
+swiper {
+  width: 712rpx;
+  height:400rpx;
+}
+.banner-container-hearder{
+  width:100%;
+  height:400rpx;
+  margin: auto;
+  position: relative;
+}
+.banner-container{
+    padding:20rpx;
+}
+.publish_border{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  width: 712rpx;
+  height: 400rpx;
+  z-index: 999;
+}
+.banner-container image{
+  width: 100%;
+}
+
+.comment_title{
+  height:65rpx;
+}
+
+.comment_title_text{
+  margin:50rpx 0 0 20rpx;
+  float: left;
+  width: 300rpx;
+  color: #DBC390;
+  height: 30rpx;
+  line-height: 30rpx;
+  
+}
+.comment_title_image{
+  width: 60rpx;
+  height: 202rpx;
+  float: right;
+  margin-top:35rpx;
+  background-image: url(https://www.leiyi.club/img/jsy/icon_wedding_moreYouhui.png);
+  background-size: 60rpx 202rpx;
+  background-repeat: no-repeat;
+}
+.comment_title_image image{
+  width: 90rpx;
+  height: 86rpx;
+}
+
+.content-wrap {
+  height: 100%;
+  box-sizing: border-box; 
+  overflow-y: hidden;
+  padding-bottom: 100rpx;
+}
+.title-box{
+  height: 150rpx;
+  background: white;
+  display: -webkit-flex;
+  display:flex;
+  align-items:center;
+ 
+}
+.title-box-left{
+   margin-left:46rpx;
+   padding: 10rpx;
+}
+.text_left{
+  margin-right: 20rpx;
+}
+.text_right{
+  font-style:italic;
+  color:red;
+}
+.title-box-right{
+    flex:2;
+    margin-left: 60rpx;
+    padding-top: 10rpx;
+}
+.title-box-right right1{
+  padding-top:50rpx;
+ 
+}
+.activityName{
+   font-weight:bold ;
+}
+.title-box-right .right3 image{
+  float:right;
+  height:48rpx;
+  width:61rpx;
+  margin-right:90px;
+  margin-bottom:-5rpx;
+  margin-top:-29px;
+}
+
+.share-box{
+  background: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rpx;
+
+}
+.share-box .share-item{
+  flex: 1;
+  margin: 20rpx;
+}
+.share-box .share-item image{
+  width:50rpx;
+  height:50rpx;
+}
+.publish_body_word{
+    position: fixed;
+    top:681rpx;
+    left:150rpx;
+    width:473rpx;
+    height:263rpx;
+    z-index:10;
+}
+.comment_scroll{
+ 
+  padding-top:625rpx;
+  padding-bottom: 120rpx;
+  color: #DBC390;
+  
+  background-size: 750rpx 1206rpx;
+  background-repeat: repeat-y;
+}
+.comment_list{
+  margin:20rpx;
+}
+.comment_header{
+  position: relative;
+}
+.comment_user{
+  display: flex;
+  font-size: 30rpx;
+}
+.comment_user image{
+  height:55rpx;
+  width: 55rpx;
+  border-radius:35rpx;
+}
+.comment_user_nick{
+  margin-top:10rpx;
+  margin-left:10rpx;
+}
+.comment_time{
+  float:right;
+  margin-top:20rpx;
+  font-size: 30rpx;
+}
+.comment_content{
+  margin-left: 55rpx;
+  padding: 20rpx 5rpx;
+  border-bottom:1rpx dotted #DBC390;
+  line-height: 50rpx;
+}
+.comment_image{
+   margin: 3rpx 50rpx;
+}
+.comment_image image{
+   width: 100%;
+   height: 290rpx;
+}
+.no_event button{
+  width: 88%;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #fff;
+  font-size: 30rpx;
+  background: #DBC390;
+  padding:0;
+  margin:0 auto;
+}
+
+
+.footer_containers{
+  display: flex;
+  justify-content: space-between;
+	position: fixed;
+	height: 100rpx;
+	width: 100%;
+  background: #EDEDED;
+  padding: 0 26rpx;
+  color: white;
+	bottom: 0;
+	left:0;
+  z-index: 999;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.input_box{
+  position: relative;
+  border: 1rpx solid #CBCBCB;
+  border-radius: 10rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  width: 498rpx;
+  background: white;
+  padding: 0 25rpx;
+  margin:14rpx 0;
+  box-sizing: border-box;
+}
+.input_box_text{
+  color: #D0D0D0;
+  background-image: url(https://www.leiyi.club/img/jsy/icon_write.png);
+  background-repeat: no-repeat;
+  background-size: 26rpx 26rpx;
+  background-position: left center;
+  padding-left: 40rpx;
+  font-size: 30rpx;
+}
+.message{
+  width: 50rpx;
+  height: 88rpx;
+  background-image: url(https://www.leiyi.club/img/jsy/icon_wedding_message.png);
+  background-repeat: no-repeat;
+  background-size: 46rpx 39rpx;
+  background-position: left center;
+  position: relative;
+}
+.message span{
+  position: absolute;
+  top:8rpx;
+  right: -23rpx;
+  width: 50rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  background: #FF5389;
+  color: #fff;
+  border-radius: 16rpx;
+  text-align: center;
+  font-size:24rpx;
+}
+.prize_box{
+  width: 70rpx;
+  height: 88rpx;
+  background-image: url(https://www.leiyi.club/img/jsy/icon_wedding_box.png);
+  background-repeat: no-repeat;
+  background-size: 40rpx 44rpx;
+  background-position: center;
+}
+.comment_prize{
+  position:absolute;
+  bottom:-7rpx;
+  width:200rpx;
+  color:white;
+  right:-18rpx;
+  font-size: 30rpx;
+
+}
+
+.modal-comfirm {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-comfirm .content {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 20rpx;
+    border:6rpx solid #DBC390;
+    background-image: url(https://www.leiyi.club/img/jsy/wedding_detail_bg02.jpg);
+    background-repeat: no-repeat;
+    background-size: 600rpx 1000rpx;
+    background-position: bottom;
+    padding-top:135rpx;
+}
+.con_top_bg{
+    width: 100%;
+    height: 160rpx;
+    background-image: url(https://www.leiyi.club/img/jsy/wedding_photo_bg.png);
+    background-repeat: no-repeat;
+    background-size:750rpx;
+    background-position:center bottom;
+    border:6rpx solid #DBC390;
+    border-bottom:none;
+    border-radius: 20rpx 20rpx 0 0;
+    position: absolute;
+    left:-6rpx;
+    top: -6rpx;
+}
+.close-x {
+    position: absolute;
+    top:-66rpx;
+    right:-28rpx;
+    width:56rpx;
+    height:56rpx;
+    background-image: url(https://www.leiyi.club/img/jsy/icon_close.png);
+    background-repeat: no-repeat;
+    background-size: 56rpx 56rpx;
+}
+
+.modal-comfirm .content .user_name{
+  border: 1rpx solid #DBC390;
+  border-radius: 12rpx;
+  margin: 30rpx 20rpx;
+  padding-left: 30rpx;
+  color: #DBC390;
+}
+.user_name_text{
+  height:75rpx;
+  padding-top:6rpx;
+
+}
+.modal-comfirm .content .user_bless{
+  border-radius: 12rpx;
+  margin: 30rpx 20rpx;
+  height:300rpx;
+  border: 1rpx solid #DBC390;
+ 
+}
+.user_bless_text{
+   height:256rpx;
+   width:250px;
+   display:block;
+   padding:30rpx;
+   border-radius: 10rpx;
+   
+}
+
+.user_bless_submit button{
+  background: #FF5A8A;
+  color:#fff;
+  width: 420rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 32rpx;
+}
+.user_bless_submit{
+  margin: 30rpx 20rpx;
+}
+
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: #000;
+  opacity: 0.3;
+  overflow: hidden;
+}
+
+.drawer_box {
+  width: 680rpx;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  z-index: 1000;
+  background: #fafafa;
+  margin-top: -420rpx;
+  margin-left: -340rpx;
+  border-radius: 20rpx;
+  padding-bottom: 30rpx;
+}
+
+.closeBtn{
+  width:50rpx ;
+  height: 50rpx;
+  position: absolute;
+  right:-8px;
+  top:-15rpx;
+}
+.closeBtn image{
+  width:50rpx;
+  height:50rpx;
+}
+.drawer_title{
+  padding: 36rpx 0;
+  line-height: 108rpx;
+  font: 40rpx 'microsoft yahei';
+  text-align: center;
+}
+.drawer_content {
+  padding:0 30rpx;
+  overflow-y: scroll;
+
+}
+.cardImg{
+  position: relative;
+
+}
+.cardImg image{
+
+  width:312px;
+  height: 446rpx;
+}
+.cardImg_textbox{
+  position:absolute;
+  bottom:225rpx;
+  color:white;
+  left:31%;
+
+}
+
+
+.drawer_content text{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  display: block;
+}
+
+.btn_ok{
+  width: 614rpx;
+  padding:20rpx 0;
+  background: #ED656F;
+  font: 40rpx 'microsoft yahei';
+  text-align: center;
+  border-top: 2rpx solid #E8E8EA;
+  color: #fff;
+  border-radius: 14rpx;
+  margin: 0 40rpx;
+}
+
+.grid { display: -webkit-box; display: box; }
+
+.cardImg_textbox text{
+  font-size: 48rpx;
+}

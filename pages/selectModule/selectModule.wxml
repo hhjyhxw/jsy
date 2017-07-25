@@ -1,0 +1,16 @@
+<scroll-view class="content-wrap" scroll-y="true" scroll-into-view="J_detail" scroll-with-animation="true">
+   <view class="muodule_list">
+        <block wx:for="{{moduleList}}" wx:key="unique"> 
+              <navigator url="../addComment/addComment?imgUrl={{item.imgUrl}}&colorValue={{item.colorValue}}">
+                    <view class="record_item">
+                        <view class="record_item_img">  
+                            <image src="{{item.imgUrl}}"></image>
+                        </view>
+                    </view>
+                </navigator>
+        </block>   
+    </view>
+</scroll-view>
+<!--底部导航-->
+    <import src="../footer/footer.wxml" />
+    <template is="footer" data="{{...footerConfig}}"/>

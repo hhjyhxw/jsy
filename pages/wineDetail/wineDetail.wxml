@@ -1,0 +1,59 @@
+<view class="jinshi_detail_container">
+    <view class="detail_header">
+        <!--轮播产品图片-->
+        <view class="detail_header_img">
+            <swiper indicator-dots="{{indicatorDots}}"  
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(255, 82, 137, 0.5)"  indicator-active-color="#FF5289">  
+                <block wx:for="{{picture}}" wx:key="unique">
+                    <swiper-item>  
+                            <image mode="aspectFill" src="{{item}}" class="slide-image" width="100%" height="100%" bindtap="onPreviewSlider" data-url=""/>  
+                    </swiper-item>  
+                </block>
+            </swiper>
+            <navigator url="../contact/contact"><view class="icon_contact"></view></navigator>
+            <!--<image src="{{productImg}}"></image>-->
+        </view>
+
+        <!--产品简介及价格-->
+        <!--<block wx:for="{{item.price}}" wx:key="unique">-->
+            <view class="detail_header_name">
+                {{productName}}
+            </view>
+            <view class="detail_header_price">
+                <span>促销价</span>  ¥ {{price}} 
+            </view>
+        <!--</block>-->
+    </view>
+
+    <view class="product_introduction">
+            <!--产品文字信息-->
+            <view class="product_introduction_title">
+                  <span></span>商品信息
+            </view>
+            <!--<block wx:for="{{productDetail}}" wx:key="unique">-->
+                <view id="con_box" class="product_introduction_content">
+                    {{desc}}
+                    <!--<view class="content_item">
+                        <text>产品名称</text>
+                        <text>今世缘 典藏五年 3000ml 40度</text>
+                    </view>-->
+                </view>
+            <!--</block>-->
+            <view class="seeAll_btn" id="seeAll_btn" bindtap="onSeeAll">查看全部</view>
+
+
+            <!--产品图片展示-->
+            <view class="product_introduction_title">
+                  <span></span>商品详情
+            </view>
+            <view class="product_introduction_img">
+                  <block wx:for="{{picture}}" wx:key="unique"> 
+                      <image src="{{item}}" mode="widthFix" style="width:700rpx" ></image>
+                  </block>  
+            </view>
+        
+      </view>
+  </view>
+<!--底部导航-->
+    <import src="../footer/footer.wxml" />
+    <template is="footer" data="{{...footerConfig}}"/>

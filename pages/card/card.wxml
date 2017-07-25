@@ -1,0 +1,18 @@
+<view class="center">
+    <block wx:for="{{mycardList}}" wx:key="unique"> 
+        <view class="cardItem">
+            <view class="cardTop">
+                <view><text>真龙今世缘</text>打折券</view>
+                <view><text class="cardTitle">{{item.title}}</text>折</view>
+            </view>
+            <view class="cardBottom">
+                <view>
+                    <text>使用范围 : {{item.stores}}</text>
+                    <text>使用限制 : 仅限于真龙粉丝</text>
+                </view>
+                
+                <text class="cardTime">有效日期 : {{item.satrtTime}}~{{item.endTime}}</text>
+            </view>
+        </view>
+    </block>
+</view>

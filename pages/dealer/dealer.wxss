@@ -1,0 +1,68 @@
+page {
+  background: #F0F0F0;
+  padding:55rpx 40rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.infoBox{
+  width: 100%;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  margin-top: -55rpx;
+}
+.dealerInfo{
+  width: 100%;
+  height: auto;
+  font-size: 28rpx;
+  line-height: 50rpx;
+}
+.bigPink{
+  margin-top: 30rpx;
+  height: 60rpx;
+  font-size: 36rpx;
+  text-align: center;
+  color: #636363;
+  display: block;
+}  
+.conPerson{
+  font-size: 38rpx;
+  height: 70rpx;
+  color: #00B3E3;
+}
+
+.czy{
+  text-align: center; 
+  overflow: hidden;
+  width: 100%;
+  height: 80rpx;
+  font-size: 36rpx;
+  color: #555555;
+}
+.conPerson image{
+  vertical-align: middle;
+  margin-left: 50rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+.erweima{
+  width: 308rpx;
+  height: 308rpx;
+  margin: 50rpx 0 20rpx 0;
+}
+.contact_btn{
+  width: 400rpx;
+  height: 80rpx;
+  line-height: 88rpx;
+  font-size: 38rpx;
+  color: #fff;
+  border: 0;
+  background-image: url(https://www.leiyi.club/img/jsy/btn_contact_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: #F0F0F0;
+}
+.contact_btn::after{
+  content: none;
+}

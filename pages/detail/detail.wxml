@@ -1,0 +1,47 @@
+<!--pages/detail/detail.wxml-->
+<view class="home">
+    <view class="headAdv">
+        <view class="advImg">
+            <image src="/images/advImg.jpg"></image>
+        </view>
+        <view class="advInfo">
+            <text>今世缘五年典藏今世缘典藏5年40度500ml*6正品白酒整箱婚庆</text>
+            <span>促销价 ¥ 426.00 活动价</span>
+        </view>
+    </view>
+    <view class="detailWord">
+        <text class="dTop">商品详情</text>
+        <text>生产许可证编号：QS3200 1501 0860 厂名：江苏今世缘酒业股份有限公司 厂址：浓香型白酒（GB/T10781.1）、固液法白酒（GB/T20822）、秀雅型蒸馏酒（Q/JSYJ0） 厂家联系方式：400-828-9669 配料表：水、高粱、小麦、大麦、豌豆 储藏方法：阴凉、干燥、通风处保存 保质期：36000天 产品名称：今世缘 典藏五年 3000ml 4… 体积（ml）:3000 品牌：今世缘 品名：典藏五年 产地中国大陆地区 省份：江苏 香型：浓香型 酒精纯度：中度白酒（40%-50%） 包装方式：包装 包装种类：箱装 净含量3000ml</text>
+    </view>
+    <view class="cpShow">
+        <view class="cpHead">
+            <text>产品介绍</text>
+        </view>
+        <view class="cpCon">
+                <view class="leftImg">
+                    <image src="/images/cpCon.jpg"></image>
+                </view>
+                <view class="rightInfo">
+                    <text class="cu da">INFORMATION CARD</text>
+                    <text class="da">产品信息卡</text>
+                    <text>[名称]： 今世缘典藏5年</text>
+                    <text>[度数]：40度</text>
+                    <text>[香型]：浓香型</text>
+                    <text>[产地]：j江苏淮安</text>
+                    <text>[规格]：500ml</text>
+                    <text>[储存]：干燥阴凉通风处贮存</text>
+                    <text>[原料]：水、高粱、大麦、小麦、豌豆</text>
+                </view>
+            </view>
+    </view>
+    <view class="cpShow">
+        <view class="cpHead">
+            <text>产品展示</text>
+        </view>
+        <view class="cpCon">
+            <view class="zsImg">
+                <image src="/images/cpImg.jpg"></image>
+            </view>
+        </view>
+    </view>
+</view>

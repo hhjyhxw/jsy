@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/activityCenter/activityCenter",
+    "pages/activityDetail/activityDetail",
+    "pages/selectModule/selectModule",
+    "pages/game/game",
+    "pages/addComment/addComment",
+    "pages/activityDetailPreview/activityDetailPreview",
+    "pages/wineDetail/wineDetail",
+    "pages/attention/attention",
+    "pages/card/card",
+    "pages/wineList/wineList",
+    "pages/activityPoster/activityPoster",
+    "pages/commentSubmit/commentSubmit",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/map/map",
+    "pages/contact/contact",
+    "pages/prize/prize",
+    "pages/show/show",
+    "pages/dealer/dealer"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff818f",
+    "navigationBarTitleText": "今世缘首页",
+    "navigationBarTextStyle":"#ffffff"
+  }
+}

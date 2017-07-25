@@ -1,0 +1,106 @@
+<!--index.wxml-->
+<view class="home">
+   <view class="banner-container"> 
+            <swiper indicator-dots="{{indicatorDots}}"  
+             autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+            <block wx:for="{{pictureUrls}}" wx:key="unique">  
+                    <swiper-item>  
+                             <image mode="aspectFill" src="{{item}}" class="slide-image" width="100%" height="100%" bindtap="onPreviewSlider" data-url="{{item}}"/>  
+                     </swiper-item>  
+             </block>  
+        </swiper>
+     </view> 
+
+    <!-- notice -->
+    <view class="notice">
+        <view class="notice_item1">最新公告</view>
+        <view class="notice_item2">
+            <swiper indicator-dots="" style="position:relative;width:100%;height:50rpx;text-align:left;margin-left:20rpx"
+                autoplay="true" interval="2000" duration="2000" circular="{{indicatorDots}}" vertical="true">  
+                <block wx:for="{{notice}}" wx:key="unique">  
+                        <swiper-item>  
+                            <text>{{item}}</text>
+                        </swiper-item>  
+                </block>  
+            </swiper>
+        </view>
+    </view>
+ 
+  <view class="unit">
+      <view class="posit">
+          <view class="unitIntro">
+              <image src="/images/introduce.jpg"></image>
+          </view>
+          <view class="favourable">
+              <image src="/images/favourable.png"></image>
+          </view>
+      </view>
+  </view>
+  <view class="unit">
+    <view class="unitHead">
+        <view class="jiu">今世缘（酒）</view>
+        <navigator url="../show/show"><span>更多…</span></navigator>
+    </view>
+    <view class="goods">
+        <!--<block wx:for="{{wines}}" wx:for-item="wine" wx:for-index="i" wx:key="id">-->
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                    <!--<image src="{{ wine.image }}"></image>-->
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <!--<text>{{ wine.nameInfo }}</text>-->
+                    <span>¥426</span>
+                    <!--<span>{{ wine.price }}</span>-->
+                  </view>
+                </view>
+            </navigator>
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+        <!--</block>-->
+        
+    </view>
+    <navigator url="../dealer/dealer">
+        <view class="dealer">
+            联系经销商
+        </view>
+    </navigator>
+  </view>
+   
+</view>
+<!--底部导航-->
+    <import src="../footer/footer.wxml" />
+    <template is="footer" data="{{...footerConfig}}"/>

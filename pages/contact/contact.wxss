@@ -1,0 +1,102 @@
+/* pages/contact/contact.wxss */
+
+.swiper-tab{  
+    width: 100%;   
+    text-align: center;  
+    line-height: 104rpx;
+    background-color: #E4E4E4;
+}  
+.swiper-tab-list{  
+    font-size: 36rpx;  
+    display: inline-block;  
+    width: 50%;  
+    color: #070707;  
+}  
+.on{ 
+    color: #fff;  
+    background-color: #FF3366;
+}  
+  
+.swiper-box{ 
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+}  
+.swiper-box view{  
+    text-align: center;  
+}
+
+.bigPink{
+  line-height: 188rpx;
+  font-size: 40rpx;
+  color: #FF6597;
+}  
+.conPerson{
+  margin-top: 10rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+}
+.czh{
+  margin-top: 0;
+  height: 40rpx;
+}
+.czy{
+  color: #0E0E0E;
+}
+.conPerson image{
+  vertical-align: middle;
+  margin-left: 76rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+.erweima{
+  width: 496rpx;
+  height: 448rpx;
+}
+.items{
+  height: 146rpx;
+  line-height: 148rpx;
+  padding: 0 24rpx;
+  border-bottom: 2rpx solid #D5D5D5;
+}
+.items text{
+  float: left;
+  font-size:36rpx; 
+  color:#FF6597;
+}
+.items input{
+  float: left;
+  font-size:36rpx; 
+  height: 148rpx;
+  line-height: 148rpx;
+  text-align: left;
+  margin-left: 40rpx;
+  color: #000;
+}
+.items picker{
+  width: 40rpx;
+  height: 148rpx;
+  line-height: 148rpx;
+  float: left;
+}
+.items .dataTime{
+  color: #000;
+  float: left;
+  width: 210rpx;
+  height: 148rpx;
+}
+.items .iconsData:nth-child(1){
+  margin-left: 10rpx;
+}
+.items .czw{
+  width: 130rpx;
+  padding-left: 20rpx;
+}
+.items .iconsData{
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+  margin-top: 50rpx;
+  box-sizing: border-box;
+}

@@ -1,0 +1,132 @@
+navigator{
+    display: inline;
+}
+.header{
+    border-bottom: 1rpx solid gainsboro;
+    position:fixed;
+    z-index: 9999;
+    top: -2rpx;
+    background-color:black;
+    width:100%;
+}
+.header_type{
+    display:flex;
+    align-items: center;
+    padding: 30rpx;
+     background-color:white;
+}
+.header_type_item{
+    flex: 1;
+    text-align: center;
+}
+.active{
+    color: red;
+}
+.header_word{
+   display:flex;
+   align-items:center;
+   padding-bottom:10rpx;
+   background-color:white;
+
+}
+.header_word_content{
+    left: 20rpx;
+    position: relative;
+    border: 1rpx solid gainsboro;
+    width:70%;
+    border-radius: 45rpx;
+    height: 70rpx;
+}
+.header_word_content image {
+    position:absolute;
+    top:13rpx;
+    left:13rpx;
+    width:50rpx;
+    height:50rpx;
+}
+.header_word_input{
+     position:absolute;
+     left:50rpx;
+     top:10rpx;
+}
+.header_word_btn{
+   height:68rpx;
+   line-height:68rpx;
+}
+
+.list_item{
+    border: 0rpx solid gainsboro; 
+    border-radius:5rpx;
+    width:47%;
+    margin: 15rpx 0rpx 10rpx 15rpx;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #fff;
+   
+}
+.list_item image{
+    width: 350rpx;
+    height: 350rpx;
+}
+.list_item .list_item_img{
+     text-align: center;
+}
+.list_item_productname{
+    padding-left: 5rpx; 
+}
+.list_item_specific{
+    padding-left: 5rpx; 
+}
+.list_item_price{
+    color: red;
+    padding-left:5rpx; 
+}
+
+.muodule_list{
+    width:100%;
+    height: auto;
+    padding:0 10rpx;
+    padding-top:15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.record_item{
+    border: 2rpx solid #BFBFBF; 
+    width:346rpx;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #fff;
+    align-content: flex-start;
+    margin-bottom: 16rpx;
+}
+.record_item .record_item_img{
+    width: 343rpx;
+    height: 453rpx;
+    display: block;
+}
+.record_item .record_item_img image{
+    height: 100%;
+    width: 100%;
+}
+.record_item_text{
+    width: 100%;
+    padding:15rpx 0;
+    box-sizing: border-box;
+}
+.record_item_text1{
+    padding-left: 13rpx;
+    font-size: 28rpx;
+    color: #FF5287;
+ }
+.record_item_text2{
+    padding-left: 13rpx;
+    font-size: 28rpx;
+    height: 40rpx;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color:#777777;
+}

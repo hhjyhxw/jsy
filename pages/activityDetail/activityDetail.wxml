@@ -1,0 +1,111 @@
+<view>
+    <view class="page_fix_header" style="background-image: url({{colorValueImg_top}});">
+        <view class="banner-container-hearder">
+            <view class="banner-container"> 
+                <swiper indicator-dots="{{indicatorDots}}"  
+                        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular   >  
+                      <block wx:for="{{picture}}" wx:key="unique">  
+                        <swiper-item>  
+                            <image mode="aspectFill" src="{{item}}" class="slide-image" width="100%" height="100%" bindtap="onPreviewSlider" data-url="{{item}}"/>  
+                        </swiper-item>  
+                      </block>  
+                </swiper>
+            </view>
+            <view class="publish_border"><image  src="https://www.leiyi.club/img/jsy/shading2.png" style="width:100%;height:100%;"></image></view>
+        </view>
+        <!--祝福语-->
+        <view class="comment_title">
+            <view class="comment_title_text"><text>祝福语(20)</text></view>
+            <view class="comment_title_image"></view>
+        </view>
+    </view>
+     <view class="publish_body_word">
+            <image  src="{{colorValueImg_center}}" style="width:100%;height:100%;"></image>
+     </view>
+    <scroll-view class="comment_scroll" style="background-image: url({{colorValueImg_bottom}});">
+         <block wx:for="{{commentList}}" wx:key="unique">  
+            <view class="comment_list">
+                <view class="comment_header">
+                    <view class="comment_time">
+                        {{item.createTime}}
+                    </view>
+                    <view class="comment_user">
+                        <image src="{{item.headImg}}" ></image>
+                        <view class="comment_user_nick">{{item.nick}}</view>
+                    </view>
+                            
+                </view>
+                <view class="comment_content">
+                  {{item.content}}
+                </view>
+            </view>
+        </block>  
+            
+        <view class="no_event" hidden="{{isNoData}}">
+            <button type="" loading="{{loading}}" disabled="{{disabled}}" bindtap="showMore" >{{loadText}}</button> 
+        </view>
+        <view class="no_event">{{isNoData}}</view>
+    </scroll-view>
+
+    <view class="footer_containers" hidden="{{isAllowComment}}">
+        <view class="foot-item1">
+            <view class="input_box" bindtap="openCommentBox">
+                <view class="input_box_text">祝福语...</view>
+            </view>
+        </view>
+        <view class="foot-item1" bindtap="scrollToComment">
+            <navigator url="">
+                <view class="message"><span>20</span></view>
+            </navigator>
+            <!--<image src="../../images/priceIcon.png"></image>
+            <navigator url="../prize/prize">
+              <view class="comment_prize">
+                      <text class="comment_prize_text">我的奖品</text>
+              </view>
+            </navigator>-->
+        </view>
+        <view class="foot-item1">
+            <navigator url="">
+                <view class="prize_box"></view>
+            </navigator>
+        </view>
+    </view>
+
+
+<!-- 祝福语弹窗 -->
+<view class="modal-comfirm" hidden="{{isHidden}}">
+    <view class="content">
+        <span class="con_top_bg"></span>
+        <view class="close-x" bindtap="closeComfirm"></view>
+        <form bindsubmit="addComment" report-submit="true">
+            <view class="user_name"><input name="name" placeholder="您的姓名" placeholder-style="color:#DBC390;" type="text" value=""  class="user_name_text"/>
+            </view>
+            <view class="user_bless"><textarea name="content" class="user_bless_text" placeholder="送上您的祝福（Blessing）"      placeholder-style="color:#DBC390;" fixed ="true" maxlength="115"></textarea>
+            </view>
+            <view class="user_bless_submit"><button formType="submit">发送祝福</button></view>
+      </form>
+        </view>
+      </view>
+</view>
+
+<!--领取卡券弹窗-->
+<view class="drawer_screen" data-statu="open" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+    <!--drawer content-->
+    <view class="drawer_title">微信卡券</view>
+    <view class="drawer_content">
+        <view class="grid cardImg">
+            <image src="../../images/v2.png"></image>
+            <view class="cardImg_textbox"><text class="cardImg_text">5元代金券</text></view>
+        </view>
+        <text></text>
+    </view>
+    <view class="btn_ok" bindtap="getCard">立即领取</view>
+    <view class="closeBtn" bindtap="closeBtn">
+        <image src="/images/close.png"></image>
+    </view>
+</view>
+
+

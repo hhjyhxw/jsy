@@ -1,0 +1,11 @@
+<view class="home">
+    <view class="actPics">
+        <image src="/images/actImg.jpg"></image>
+    </view>
+    <view class="wish">
+        <view class="top">
+            <text>祝福语（199）</text>
+        </view>
+        <view class="wishList"></view>
+    </view>
+</view>

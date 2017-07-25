@@ -1,0 +1,28 @@
+<!--footer.wxml-->
+
+<template name="footer">
+<!--底部导航-->
+<view class="footer_container">
+        <view class="foot-item foot1">
+        <navigator url="../activityCenter/activityCenter" hover-class="none" open-type="redirect">
+          <image src="https://www.leiyi.club/img/jsy/icon_index_on.png" />
+          <view class="">首页</view>
+        </navigator>
+        </view>
+       
+        <view class="foot-item2 foot2" hidden="{{isHiddenPush}}">
+        <navigator url="../selectModule/selectModule" hover-class="none" open-type="redirect">
+        <image src="https://www.leiyi.club/img/jsy/icon_publish.png" style="margin-top:-1rpx;"/>
+         <view class="" style="margin-top:-4rpx;">发布</view>
+        </navigator>
+        </view>
+        
+        <view class="foot-item foot3">
+        <navigator url="../user/user" hover-class="none" open-type="redirect">
+        	<image style="margin-top:-1rpx;" src="https://www.leiyi.club/img/jsy/icon_my{{work ? '-red' : ''}}.png" />
+       		<view class="" style="margin-top:-4rpx;">我的</view>
+        </navigator>
+        </view>
+
+</view>
+</template>

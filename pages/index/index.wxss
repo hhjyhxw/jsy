@@ -1,0 +1,173 @@
+image{
+  width: 100%;
+  height: 100%;
+}
+swiper {
+  height: 390rpx;
+}
+.banner-container{
+  width: 100%;
+  height: 390rpx;
+  background: #666666;
+}
+.banner-container image{
+  width: 100%;
+  height: 390rpx;
+}
+.slide-image{  
+    width: 100%; 
+    height:100%; 
+}
+.content-wrap {
+  height: 100%;
+  box-sizing: border-box; 
+  overflow-y: hidden;
+  padding-bottom: 100rpx;
+}
+
+.banner{
+  width: 100%;
+  height: 360rpx;
+}
+
+.newGG{
+  height: 90rpx;
+  padding-top:30rpx;
+  border-bottom: 20rpx solid #F2F2F2;
+}
+.newGG span{
+  display: inline-block;
+  padding:14rpx 10rpx;
+  border: 2rpx solid #EB4577;
+  font-size: 32rpx;
+  border-radius: 12rpx;
+  margin-left: 20rpx;
+  color: #C51927;
+}
+.newGG text{
+  margin-left: 48rpx;
+  font-size: 40rpx;
+}
+
+.notice{
+    background-color: white;
+    height: 80rpx;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display:flex;
+    align-items:center;
+    text-align: center;
+    box-sizing: border-box; 
+   
+}
+.notice_item1{
+     box-sizing: border-box; 
+     border: 2rpx solid red;
+     width:150rpx;
+     margin-left:20rpx;
+     padding:5rpx;
+     border-radius: 6rpx;
+     color: red;
+}
+.notice_item2{
+     flex:2;
+     box-sizing: border-box; 
+}
+.posit{
+  position: relative;
+}
+.unitIntro{
+  width: 100%;
+  height: 320rpx;
+  overflow: hidden;
+}
+.favourable{
+  width: 110rpx;
+  height: 100rpx;
+  position: absolute;
+  right:20rpx;
+  top:-36rpx;
+}
+.unitHead{
+  padding: 0 16rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 2rpx solid #EFEFEF;
+}
+.unitHead .jiu{
+  padding-left: 20rpx;
+  border-left: 8rpx solid #E93E68;
+  height: 64rpx;
+  margin-top: 18rpx;
+  line-height: 64rpx;
+  font-size: 40rpx;
+  float: left;
+}
+.unitHead span{
+  border:none;
+  background: #fff;
+  font-size: 32rpx;
+  float: right;
+  color: #4EB290;
+  margin-right: 10rpx;
+}
+.goods{
+  overflow: hidden;
+}
+.goodsBox{
+  border-top: 2rpx solid #BBBBBB;
+  border-bottom: 2rpx solid #BBBBBB;
+  border-left: 2rpx solid #616161;
+  width: 50%;
+  float: left;
+  margin-left: -1rpx;
+  margin-bottom:4rpx; 
+}
+.goodsPic{
+  width: 368rpx;
+  height: 250rpx;
+}
+
+.goodsInfo{
+  padding:16rpx 18rpx;
+  font-size: 28rpx;
+}
+.goodsBox text{
+  height: 40rpx;
+}
+.goodsBox span{
+  display: block;
+  color:#E40D15;
+  height: 40rpx;
+}
+.dealer{
+  width: 100%;
+  height: 112rpx;
+  line-height: 112rpx;
+  font-size: 40rpx;
+  background: #FECCFF;
+  text-align: center;
+  margin-top: -4rpx;
+  z-index: 5;
+}
+.introduce{
+  padding: 48rpx 18rpx;
+}
+.yanPic{
+  float: left;
+  width: 350rpx;
+  height: 560rpx;
+  margin-bottom: 70rpx;
+  margin-right: 60rpx;
+}
+
+.yanInfo text{
+  display: block;
+  font-size: 28rpx;
+  height: 60rpx;
+}
+.yanInfo text.shuxing{
+  font-size: 32rpx;
+  font-weight: bold;
+  height: 70rpx;
+}

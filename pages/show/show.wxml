@@ -1,0 +1,93 @@
+<view class="classname">
+  <view class="swiper-tab">  
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">销量</view>  
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">价格</view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">最新</view>  
+      <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">好评</view>    
+  </view>
+  <view class="search">
+    <view class="searchBox">
+        <span></span>
+        <input type="text" placeholder="点这里搜索你想买的东西" placeholder-style="color:#9A9A9A" />
+    </view>
+    <button>搜索</button>
+  </view>
+  
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+      <!-- 销量 -->  
+      <swiper-item>  
+          <view class="goods">
+              <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+            <navigator url="../detail/detail">
+                <view class="goodsBox">
+                  <view class="goodsPic">
+                    <image src="/images/goods1.jpg"></image>
+                  </view>
+                  <view class="goodsInfo">
+                    <text>今世缘五年典藏40度500ml*6正品白酒整箱婚庆</text>
+                    <span>¥426</span>
+                  </view>
+                </view>
+            </navigator>
+          </view>
+      </swiper-item>  
+      <!-- 价格 -->  
+      <swiper-item>  
+        
+      </swiper-item>
+  </swiper>
+</view>  

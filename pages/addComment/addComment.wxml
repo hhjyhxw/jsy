@@ -1,0 +1,154 @@
+<view class="body">
+  <view class="title">
+    <view class="title_text"><text class="title_text_text">主题：</text></view>
+    <view  class="title_input"><input type="text" value="{{activityName}}" placeholder="输入活动主题" placeholder-style="color:#b4b8cc;" bindchange="onActivityNameChange"/></view>
+  </view>
+  
+    <view class="piture_title">
+        <text>头图：</text>
+            <block wx:for="{{piture_module}}" wx:key="unique">
+                <view class="role-check {{item.isChecked? 'role-check-selected' : ''}}"  bindtap="onShadingChange"
+                data-index="{{index}}" data-id="{{item.id}}"></view>
+                <text class="role-text">{{item.name}}</text>    
+            </block>
+    </view>
+    
+
+    <!--自定义头图框  -->
+    <view class="self_define_image" hidden="{{hearder_define}}">
+     <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500" style="height:{{swiperHeight}}rpx;">
+      <block wx:for="{{picPaths}}" wx:key="unique">  
+        <swiper-item>  
+            <image src="{{item}}" class="slide-image" mode="aspectFill"/> 
+            <view class="preview-delete" bindtap="onDeletePreview" data-index="{{index}}" data-path="{{item}}"></view>
+        </swiper-item>  
+      </block>  
+    </swiper>
+    </view>
+     <view class="add-pic-btn-wrap" hidden="{{hearder_define_add}}">
+        <view class="add-pic-btn" bindtap="onChooseEventPics">+ 添加活动图片</view>
+    </view>
+    <!--头图模板框 -->
+    <view class="modul_image" hidden="{{hearder_module}}">
+         <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500" style="height:390rpx;">
+            <block wx:for="{{templatePictrue}}" wx:key="unique"> 
+                <swiper-item>  
+                    <image src="{{item.imageurl}}" class="slide-image" mode="aspectFill"/> 
+                    <view class="role-check preview-select {{item.isSelect?'role-check-selected':''}}"
+                        bindtap="onSelectTemplet" data-index="{{index}}" data-path="{{item.imageurl}}"></view>
+                </swiper-item>  
+            </block>  
+         </swiper>
+    </view>
+
+
+      <!--边框底纹 -->
+   <!-- <view class="border_shading">
+         <view class="border_shading_text">
+            <text>边框底纹：</text>
+                 <block wx:for="{{shading_module}}" wx:key="unique">
+                    <view class="role-check {{item.isChecked? 'role-check-selected' : ''}}" 
+                    data-index="{{index}}"  bindtap="onchangeShading"></view>
+                    <text class="role-text">{{item.name}}</text>    
+                </block>
+        </view>
+        <view class="border_shading_image">
+            <view class="shading1"> <image src="../../images/shading1.png"></image></view>
+            <view class="shading2"> <image src="../../images/shading2.png"></image></view>
+            <view class="shading3"> <image src="../../images/shading3.png"></image></view>
+           
+        </view>
+    </view>
+     -->
+    <!--时间控件-->
+     <view class="bi-field bi-starttime">
+        <text class="bi-field-left">开始时间</text>
+        <view class="bi-field-mid bi-starttime-mid">
+            <picker mode="date" value="{{startDate}}" start="2017-01-01" end="2099-12-31" bindchange="bindStartDateChange" class="filter-date">
+                <view class="picker">
+                    <text class="picker-text">{{startDate}}</text><view class="cal-icon"></view>
+                </view>
+            </picker>
+            <picker mode="time" value="{{startClock}}" start="00:00" end="23:59" bindchange="bindStartClockChange" class="filter-date">
+                <view class="picker">
+                    <text class="picker-text">{{startClock}}</text><view class="cal-icon clock-icon"></view>
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="bi-field bi-endtime">
+        <text class="bi-field-left">结束时间</text>
+        <view class="bi-field-mid bi-endtime-mid">
+            <picker mode="date" value="{{endDate}}" start="2017-01-01" end="2099-12-31" bindchange="bindEndDateChange" class="filter-date">
+                <view class="picker">
+                    <text class="picker-text">{{endDate}}</text><view class="cal-icon"></view>
+                </view>
+            </picker>
+            <picker mode="time" value="{{endClock}}" start="00:00" end="23:59" bindchange="bindEndClockChange" class="filter-date">
+                <view class="picker">
+                    <text class="picker-text">{{endClock}}</text><view class="cal-icon clock-icon"></view>
+                </view>
+            </picker>
+        </view>
+    </view>
+     <view class="prize_setting_title">奖项设置</view>
+    <view class="prize_setting">
+          <view class="prize_setting_item">
+            <view>
+                   <block wx:for="{{prize_module}}" wx:key="unique" value="{{index}}">
+                    <view class="prize_picker"   hidden="{{item.isHidden}}">
+                        <view class="picker_del" bindtap="delPrize"><image src="../../images/icon_delete.png"></image></view>
+                        <view class="prize_rank"> 
+                            <picker bindchange="bindPrizeChange"  data-prizeLevel="{{index}}"  value="{{index1}}" range="{{prizeList}}" range-key="{{'pName'}}">       <view class="picker">
+                                    <view  class="prize_rank_text">{{item.awardName}}：</view>
+                                    <view style="margin-top:{{item.margintop ? '-18px' : '2rpx'}}"class="prize_rank_item" >{{item.pName}}</view>
+                                </view>
+                            </picker>
+                        </view>              
+                        <view class="prize_num">
+                            <view  class="prize_num_text">人数:</view>
+                            <view  class="prize_num_input"><input type="number" value="{{item.prizeCount}}" class=""/></view>
+                        </view>
+                        <view class="prize_type">
+                            <view class="role-check {{item.pStatus=='0'? 'role-check-selected' : ''}}"  
+                                 data-index="{{index}}" data-typeid="{{item.pid}}"></view>
+                            <text class="prize_type_role_text">现场</text>  
+                            <view class="role-check {{item.pStatus=='1'? 'role-check-selected' : ''}}" 
+                                 data-index="{{index}}" data-typeid="{{item.pid}}"></view>
+                            <text class="prize_type_role_text">物料</text>  
+                        </view>
+                   </view>
+                </block>
+                
+            </view>
+         </view>
+    </view>
+     <!--添加奖项-->
+    <view class="add_prize"  bindtap="addPrize">
+        <view class="add_prize_image">
+            <image src="../../images/add_03.png"></image>
+       </view>
+       <view>添加奖项</view>
+    </view>
+    <!--祝福语送卡券类型-->
+    <view class="prize_setting_title">祝福语送卡券</view>
+    <view class="card_list">
+        <picker bindchange="bindCardChange" value="{{index}}" range="{{cardList}}" range-key="{{'couponName'}}">
+            <view class="picker">
+                <view class="card_list_text">卡券名称：</view>
+                <view class="card_list_item">{{blessingCard.couponName!=null?blessingCard.couponName:'选择卡券'}}</view>
+            </view>
+         </picker>
+   </view>
+
+    <!--底部-->
+    <view class="add_comment_footer">
+         <view class="add_comment_footer_left" bindtap="preview">
+           预览
+        </view>
+         <view class="add_comment_footer_right" bindtap="checkAndSave">
+           提交
+        </view>
+    </view>
+   
+</view>

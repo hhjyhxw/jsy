@@ -1,0 +1,33 @@
+<!--pages/contact/contact.wxml-->
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">帮助热线</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">申请加入</view>   
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+    <!-- 帮助热线 -->  
+    <swiper-item>  
+      <view class="bigPink">今世缘官方客服</view> 
+      <view class="conPerson">客服小今：222888733</view> 
+      <view class="conPerson">客服小缘：332888733</view>
+      <view class="bigPink">客服微信号</view>
+      <view class="conPerson czh">今世缘官方客服：jsy888</view> 
+      <view class="bigPink">客服电话</view>
+      <view class="conPerson czh">400-0588-222 <image src="/images/phone.jpg"></image></view>
+      <view class="bigPink czy">微信公众平台二维码</view>
+      <view><image class="erweima" src="/images/ewm.jpg"></image></view>
+    </swiper-item>  
+    <!-- 申请加入 -->  
+    <swiper-item>  
+      <view class="items"><text>您的姓名:{{inputValue}}</text><input  bindinput="bindKeyInput" placeholder="请输入您的姓名"/></view>
+      <view class="items"><text>您的手机号码:</text><input type="digit" placeholder="请输入您的手机号"/></view>  
+      <view class="items">
+        <text style="margin-right:15px;">您的婚礼日期:</text>
+        <text class="dataTime">{{dateValue}}</text><picker mode="date" value="{{dateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange" ><image class="iconsData" src="/images/iconData.jpg"></image></picker>
+        <text class="dataTime czw">{{timeValue}}</text><picker mode="time" value="{{timeValue}}" start="00:00" end="24:00" bindchange="timePickerBindchange"><image class="iconsData" src="/images/iconTime.jpg"></image>
+</picker>
+
+      </view> 
+    </swiper-item>
+</swiper>  
+

@@ -1,0 +1,75 @@
+<view>
+     <view class="page_fix_header" style="background-image: url({{colorValueImg_top}});">
+         <view class="banner-container-hearder">
+            <view class="banner-container"> 
+                <swiper indicator-dots="{{indicatorDots}}"  
+                        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular   >  
+                      <block wx:for="{{picture}}" wx:key="unique">  
+                        <swiper-item>  
+                            <image mode="aspectFill" src="{{item}}" class="slide-image" width="100%" height="100%" bindtap="onPreviewSlider" data-url="{{item}}"/>  
+                        </swiper-item>  
+                      </block>  
+                </swiper>
+            </view>
+            <view class="publish_border">
+                 <image  src="https://www.leiyi.club/img/jsy/shading2.png" style="width:100%;height:100%;"></image></view>
+             </view>
+        <!--祝福语-->
+        <view class="comment_title">
+            <view class="comment_title_text"><text>祝福语(20)</text></view>
+            <view class="comment_title_image"></view>
+        </view>
+    </view>
+    <view class="publish_body_word">
+                <image  src="{{colorValueImg_center}}" style="width:100%;height:100%;"></image>
+     </view>
+    <scroll-view class="comment_scroll" style="background-image: url({{colorValueImg_bottom}});" >
+         <block wx:for="{{commentList}}" wx:key="unique">  
+            <view class="comment_list">
+                <view class="comment_header">
+                    <view class="comment_time">
+                        {{item.createTime}}
+                    </view>
+                    <view class="comment_user">
+                        <image src="{{item.headImg}}" ></image>
+                        <view class="comment_user_nick">{{item.nick}}</view>
+                    </view>
+                            
+                </view>
+                <view class="comment_content">
+                  {{item.content}}
+                </view>
+            </view>
+        </block>  
+            
+        <view class="no_event" hidden="{{isNoData}}">
+            <button type="" loading="{{loading}}" disabled="{{disabled}}" bindtap="showMore" >{{loadText}}</button> 
+        </view>
+        <view class="no_event">{{isNoData}}</view>
+         
+    </scroll-view>
+    
+     <view class="footer_containers" hidden="{{isAllowComment}}">
+        <view class="foot-item1">
+            <view class="input_box" bindtap="openCommentBox">
+                <view class="input_box_text">祝福语...</view>
+            </view>
+        </view>
+        <view class="foot-item1" bindtap="scrollToComment">
+            <navigator url="">
+                <view class="message"><span>20</span></view>
+            </navigator>
+         
+        </view>
+        <view class="foot-item1">
+            <navigator url="">
+                <view class="prize_box"></view>
+            </navigator>
+        </view>
+    </view>
+    </view>
+
+
+
+
+

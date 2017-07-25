@@ -1,0 +1,8 @@
+<view class="wrap" >
+    <image src="{{imgUrl}}" mode="aspectFill" style="height:{{winHeight*0.85}}px"></image>
+    <view class="btn-wrap">
+        <navigator url="../addComment/addComment?colorValue={{colorValue}}">
+        <view class="enter-btn">确定</view>
+        </navigator>
+    </view>
+</view>

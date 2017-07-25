@@ -1,0 +1,30 @@
+<!--pages/show/attention.wxml-->
+<view class="home">
+    <block wx:for="{{myFollow}}" wx:key="unique"> 
+        <navigator url="../actDetail/actDetail">
+            <view class="actUnits">
+                <!--pictures图片滑动轮播-->
+                <view class="actImg">
+                    <image src="{{item.pictures}}"></image>
+                    
+                    <!--<swiper indicator-dots="{{indicatorDots}}"  indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="#fff" circular=true 
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+                        <block wx:for="{{item.pictures}}" wx:key="unique">  
+                            <swiper-item>  
+                                <image mode="aspectFill" src="{{item}}" class="slide-image" width="100%" height="100%" bindtap="onPreviewSlider" data-url="{{item.pictures}}"/>  
+                            </swiper-item>  
+                        </block>  
+                    </swiper>-->
+                </view>
+
+                <!--主题名称-->
+                <view class="leftInfo">
+                    <text>{{item.title}}</text>
+                    <!--<text>{{item.address}} {{item.time}}</text>-->
+                    <text>06月18号 17:00</text>
+                    
+                </view>
+            </view>
+        </navigator>
+    </block>
+</view>

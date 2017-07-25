@@ -1,0 +1,23 @@
+<view class="home">
+    <view class="gamePrograme">
+        <view class="float_l gameFirst">
+          <view class="float_l circle cir_gray">相遇相知</view>
+          <span class=" bg_gray float_l right"></span>
+        </view>
+        <view class="float_l gameSecond">
+          <span class="float_l right bg_gray"></span>
+          <view class="float_l circle cir_gray">相恋相惜</view>
+          <span class="float_l right bg_gray"></span>
+        </view>
+        <view class="float_l gameThird">
+          <span class="float_l right bg_gray"></span>
+          <view class="float_l circle cir_gray">携手相伴</view>
+        </view>
+    </view>
+    <view class="gameImg">
+        <image src="/images/gameImg.jpg"></image>
+    </view>
+    
+    <button class="cy_btn">我要参与</button>
+
+</view>

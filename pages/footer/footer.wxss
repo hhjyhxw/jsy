@@ -1,0 +1,96 @@
+/**底部导航**/
+.footer_container{
+	display: flex;
+  justify-content: space-between;
+	position: fixed;
+	height: 100rpx;
+	width: 100%;
+	background: ghostwhite;
+  border-top:solid 1rpx #e3e3e3;
+ 
+	bottom: 0;
+	left:0;
+   z-index: 999;
+}
+
+.foot-item{
+   width: 100%;  
+   -webkit-align-items: center;
+   -webkit-justify-content: center;
+   align-items: center;
+   justify-content: center;
+   text-align:center;
+   font-size:24rpx;
+   font-weight:bolder;
+   color:red;
+   margin-top:18rpx;
+   
+}
+
+
+page{
+  background-color:#ffffff; 
+  width: 100%;
+  color: #2d2e33;
+   font-family: 'Arial','Microsoft Yahei', "Helvetica Neue", Helvetica, Tahoma, sans-serif; 
+   font-size: 32rpx;
+   padding-bottom:120rpx;
+}
+
+/**底部导航**/
+.footer_container{
+	display: flex;
+  justify-content: space-between;
+	position: fixed;
+	height: 100rpx;
+	width: 100%;
+	background: ghostwhite;
+  border-top:solid 1rpx #e3e3e3;
+  color: #ffffff;
+	bottom: 0;
+	left:0;
+   z-index: 999;
+}
+
+.foot-item{
+   width: 100%;  
+   -webkit-align-items: center;
+   -webkit-justify-content: center;
+   align-items: center;
+   justify-content: center;
+   text-align:center;
+   font-size:24rpx;
+   font-weight:bolder;
+   color:#FF69B4;
+   margin-top:14rpx;
+}
+
+.foot1 image{
+  width: 40rpx;
+  height: 46rpx;
+}
+
+.foot2 image{
+  width: 120rpx;
+  height: 115rpx;
+}
+.foot3 image{
+  width: 36rpx;
+  height:47rpx;
+}
+
+/*.font-gradient{
+    color: #c52424;
+    font-family: '微软雅黑';
+     background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#c52424), to(#fd4848));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }*/
+
+.font-gradient{
+    color: #FFB6C1;
+    font-family: '微软雅黑';
+     background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#c52424), to(#fd4848));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }

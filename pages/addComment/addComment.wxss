@@ -1,0 +1,323 @@
+
+.body{
+    background-color: white;
+    height: 100%;
+}
+.title{
+    display: flex;
+    height: 100rpx;
+    width:100%;
+    align-items: center;
+    background: white;
+    
+}
+.title_text{
+    text-align: center;
+    width:20%;
+}
+.title_text_text {
+    font-size:33rpx;
+    font-weight:bold;
+
+}
+.title_input{
+    width:65%;
+}
+.title_input text{
+    height: 65rpx;
+    line-height: 65rpx;
+    font-size: 39rpx;
+}
+.piture_title{
+     background: white;
+     display: flex;
+     align-items: center;
+     margin-top:2rpx;
+     padding:20rpx 0rpx 0rpx 30rpx;
+
+}
+.self_define_image{
+    border-bottom: 1rpx solid gainsboro;
+}
+.preview-delete {
+    position: absolute;
+    width: 30rpx;
+    height: 30rpx;
+    background-image: url(https://www.leiyi.club/img/jsy/icon_delete.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 30rpx;
+    right: 30rpx;
+}
+.preview-select {
+    position: absolute;
+    width:30rpx;
+    height:30rpx;
+    background-repeat:no-repeat;
+    background-size:100%;
+    top:30rpx;
+    right:30rpx;
+}
+
+
+.add-pic-btn-wrap {
+    padding: 30rpx;
+    background-color: #ffffff;
+}
+
+.add-pic-btn {
+    background-color: #ff818f;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 8rpx;
+}
+
+.role-check {
+    width:30rpx;
+    height:45rpx;
+    margin-right:10rpx;
+    background-image:url(http://eventsocial-1253427581.cossh.myqcloud.com/v1.0/pub_check.png);
+    background-size:30rpx 30rpx;
+    background-position:center;
+    background-repeat:no-repeat;
+    vertical-align:middle;
+  
+}
+.role-text {
+    display: inline-block;
+    margin-right:50rpx;
+
+}
+.role-check-selected {
+    background-image: url(https://www.leiyi.club/img/jsy/selectradio.png);
+}
+.self_define_image image{
+    width: 100%;
+    height: 390rpx;
+}
+.modul_image image{
+    width: 100%;
+    height: 390rpx;
+}
+.border_shading{
+    background: white;
+    padding:20rpx 0rpx 10rpx 30rpx;
+    margin-top: 2rpx;
+}
+.border_shading_text{
+     display: flex;
+     align-items: center;
+  
+}
+.border_shading_image{
+    display: flex;
+    justify-content:flex-end;
+     margin-right:50rpx;
+     padding-bottom:10rpx;
+     align-items: center;
+     padding-top:13rpx;
+}
+.border_shading_image image{
+    width:150rpx;
+    height:88rpx;
+    margin:0rpx 10rpx;
+}
+
+.bi-field {
+    height: 100rpx;
+    padding: 0 30rpx;
+    border-top: 1rpx solid #d9d9d9;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.bi-title-input {
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    width: 100%;
+}
+
+.bi-field-left {
+    font-size: 30rpx;
+    color: #4c4d4e;
+    line-height: 100rpx;
+    margin-right: 43rpx;
+}
+
+.bi-field-mid {
+    flex: 1;
+    font-size: 30rpx;
+    line-height: 100rpx;
+}
+
+.bi-field-right {
+    width: 32rpx;
+    height: 100rpx;
+    padding-top: 32rpx;
+    box-sizing: border-box;
+}
+.filter-date {
+    float: left;
+    margin-right: 40rpx;
+}
+
+.picker-text {
+    height: 100rpx;
+    display: inline-block;
+    margin-right: 17rpx;
+}
+.cal-icon {
+    display: inline-block;
+    width: 34rpx;
+    height: 100rpx;
+    background-image: url(https://www.leiyi.club/img/jsy/icon_data.png);
+    background-size: 34rpx 34rpx;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-top:-10rpx;
+}
+
+.clock-icon {
+     background-image: url(https://www.leiyi.club/img/jsy/icon_time.png);
+}
+.bi-endtime{
+    border-bottom: 1rpx solid #d9d9d9;
+}
+.prize_setting{
+    background:white; 
+}
+.prize_setting_title{
+    margin: 20rpx 0rpx 2rpx 0rpx;
+    padding-left: 30rpx;
+    background:white; 
+    height: 80rpx;
+    line-height: 80rpx;
+    color: black;
+
+}
+.picker_del{
+
+}
+.picker_del image{
+    width:36rpx;
+    height:36rpx;
+    padding-left:12rpx;
+}
+.prize_setting_item{
+    padding-left:15rpx;
+    border-bottom:1rpx solid #c0c0c0;
+}
+.prize_rank{
+    width:39%;
+    margin-right:25rpx;
+    padding-left: 13rpx;
+    
+}
+
+.prize_rank_item{
+    margin-left:134rpx;
+    border-bottom:1rpx solid #d9d9d9;
+    width:53%;
+    margin-top:-35rpx;
+    padding-left:5rpx;
+
+}
+.prize_picker{
+    display: flex;
+    padding-top:25rpx;
+    height: 79rpx;
+}
+.prize_type{
+    display: flex;
+    width: 40%;
+}
+.prize_num{
+  position: relative;
+   width: 27%;
+   
+}
+.prize_num_text{
+    float: left;
+}
+.prize_num_input{
+    position: absolute;
+    left: 83rpx;
+    border-bottom: 1rpx solid #d9d9d9;
+    width: 100rpx;
+    text-align: center;
+    margin-top:-7rpx;
+
+}
+.prize_type_role_text{
+    margin-right: 10rpx;
+}
+.add_prize{
+    display: flex;
+    padding: 0rpx 20rpx 0rpx 20rpx;
+    margin:3rpx 0rpx;
+    background: white;
+    height: 80rpx;
+    line-height: 80rpx;
+  
+}
+.add_prize_image{
+    margin-top: 15rpx;
+}
+.add_prize_image image{
+    height:45rpx;
+    width:45rpx;
+   
+}
+.card_list{
+    display: flex;
+    flex-direction: row;
+    background:white;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: relative;
+    paddin-left:20rpx;
+}
+.card_list_text{
+    margin-left:30rpx;
+}
+.card_list_item{
+    position:absolute;
+    margin-top:-98rpx;
+    margin-left:183rpx;
+    color:#b4b8cc;
+
+}
+.add_comment_footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #ff5289;
+    bottom: 0rpx;
+    left: 0rpx;
+    right: 0rpx;    
+    border-top: 1rpx solid #d9d9d9;
+    border-bottom: 1rpx solid #d9d9d9;
+   
+
+}
+.add_comment_footer_left{
+   flex: 1;
+   background: white;
+
+}
+.add_comment_footer_right{
+    flex: 1;
+}
+
+

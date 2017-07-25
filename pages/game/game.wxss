@@ -1,0 +1,54 @@
+image{
+  width: 100%;
+  height: 100%;
+}
+.gamePrograme{
+  padding:80rpx 40rpx;
+  overflow: hidden;
+}
+.gamePrograme .float_l{
+  float: left;
+}
+.circle{
+  width: 120rpx;
+  height: 120rpx;
+  border: 2rpx solid #6B6B6B;
+  border-radius: 60rpx;
+  font-size: 28rpx;
+  padding: 24rpx 30rpx;
+  box-sizing: border-box;
+}
+.cir_red{
+  background: #FF3366 ;
+  color: #fff;
+}
+.cir_gray{
+  background: #DADADA;
+  color: #030303;
+}
+.bg_red{
+  background: #FF3366 ;
+}
+.bg_gray{
+  background: #DADADA;
+}
+span.right{
+  width: 76rpx;
+  height: 8rpx;
+  margin-top: 60rpx;
+}
+.gameImg{
+  width: 750rpx;
+  height: 700rpx;
+}
+.cy_btn{
+  width: 500rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 12rpx;
+  border: 2rpx solid #865761;
+  background: #FF3366;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+}

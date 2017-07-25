@@ -1,0 +1,248 @@
+page {
+  height: 100%;
+  padding-bottom: 0;
+  background-color: #F0F0F0;
+}
+navigator{
+    display: inline;
+}
+swiper {
+  height: 417rpx;
+}
+
+.banner-container{
+  width: 100%;
+  height: 417rpx;
+  background: #666666;
+  position: relative;
+}
+.icon_contact{
+  position: absolute;
+  right: 0;
+  top:30rpx;
+  background-image: url(https://www.leiyi.club/img/jsy/icon_contact.png);
+  background-repeat: no-repeat;
+  background-size:55rpx 195rpx ;
+  width: 55rpx;
+  height: 195rpx;
+}
+.banner-container image{
+  width: 100%;
+  height: 417rpx;
+}
+.slide-image{  
+    width: 100%; 
+    height:100%; 
+}
+.content-wrap {
+  height: 100%;
+  box-sizing: border-box; 
+  overflow-y: hidden;
+  padding-bottom: 100rpx;
+}
+.classlist{
+    background-color: white;
+    height: 200rpx;
+    width:100%;
+    display: -webkit-flex;
+    display: -webkit-inline-flex;
+    display:flex;
+    align-items:center;
+    text-align: center;
+    box-sizing: border-box; 
+}
+.classlist_item{
+    flex: 1;
+}
+.classlist_item_img{
+ 
+
+}
+.classlist_item_img image{
+    height: 100rpx;
+    width:100rpx;
+}
+
+.notice{
+    background-image: url(https://www.leiyi.club/img/jsy/notice_bg.png) ;
+    background-size: 668rpx 86rpx;
+    background-repeat: no-repeat;
+    height: 86rpx;
+    margin:20rpx 40rpx;
+    align-items:center;
+    text-align: center;
+    box-sizing: border-box; 
+   
+}
+.notice_item1{
+     box-sizing: border-box; 
+     width:190rpx;
+     height: 20rpx;
+     margin-left:40rpx;
+     line-height: 82rpx;
+     color: #fff;
+     font-size: 30rpx;
+     font-weight: bold;
+     float: left;
+}
+.notice_item1 span{
+  display: inline-block;
+  width: 4rpx;
+  height: 20rpx;
+  background: #FDF12A;
+  margin-left: 20rpx;
+}
+.notice_item2{
+     float: left;
+     width: 440rpx;
+     line-height: 80rpx;
+     color: #fff;
+     font-size: 28rpx;
+     font-weight: normal;
+     height: 40rpx;
+     box-sizing: border-box; 
+}
+.posit{
+  position: relative;
+  top:8rpx;
+}
+.unitIntro{
+  width: 100%;
+  height: 187rpx;
+  overflow: hidden;
+}
+.unitIntro image{
+  width: 100%;
+  height: 187rpx;
+}
+.favourable{
+  position: absolute;
+  right:20rpx;
+  top:-36rpx;
+}
+.favourable image{
+  width: 110rpx;
+  height: 100rpx;
+}
+.record_title{
+    height: 84rpx;
+    position: relative;
+    padding: 0 30rpx;
+    width: 690rpx;   
+}
+
+.record_title_left{
+    margin: 25rpx 0;
+    border-left:6rpx solid #FF5289;
+    font-size:30rpx;
+    font-weight: bold;
+    padding-left: 20rpx;
+    height: 30rpx;
+    line-height:30rpx;
+    float: left;
+}
+.record_title_left span{
+    color:#FF5289;
+}
+.record_title_right{
+    float: right;
+    width:148rpx;
+    height: 35rpx; 
+    color: #fff;
+    font-size: 22rpx;
+    background-image: url(https://www.leiyi.club/img/jsy/icon_seeMore.png);
+    background-size: 148rpx 35rpx;
+    background-repeat: no-repeat;
+    margin-top:30rpx;
+}
+.reHeight{
+  height: 35rpx;
+}
+.noMargin{
+  margin-bottom:0;
+}
+
+.morrecord{
+    width:100%;
+    height: auto;
+    padding:0 10rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.record_item{
+    border: 2rpx solid #BFBFBF; 
+    width:346rpx;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #fff;
+    align-content: flex-start;
+    margin-bottom: 16rpx;
+}
+.record_item .record_item_img{
+    width: 343rpx;
+    height: 338rpx;
+    display: block;
+}
+.record_item .record_item_img image{
+    height: 100%;
+    width: 100%;
+}
+.record_item_text{
+    width: 100%;
+    padding:20rpx 0;
+    box-sizing: border-box;
+}
+.record_item_text1{
+    padding-left: 13rpx;
+    font-size: 30rpx;
+    color: #FF5287;
+ }
+.record_item_text2{
+    padding-left: 13rpx;
+    font-size: 30rpx;
+    height: 40rpx;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color:#777777;
+}
+.smoke{
+    display: flex;
+    background: white;
+    padding:30rpx;
+}
+.smoke_img{
+    height:550rpx;
+   
+}
+.smoke .smoke_img image{
+  height:550rpx;
+  width:320rpx;
+}
+.smoke_specific{
+    padding-left:25rpx;
+    margin-left:30rpx;
+
+}
+.smoke_specific .smoke_text0{
+     font-size: 35rpx;
+    font-weight:bold ;
+
+}
+.smoke_specific .smoke_text1{
+    font-size: 30rpx;
+    margin: 20rpx 0rpx;
+}
+.dealer{
+  width: 100%;
+  height: 112rpx;
+  line-height: 112rpx;
+  font-size: 40rpx;
+  background: #FECCFF;
+  text-align: center;
+  margin-top: -4rpx;
+  z-index: 5;
+}

@@ -1,0 +1,54 @@
+<!--pages/user/user.wxml-->
+<view class="home">
+  <view class="userHeader">
+      <view class="photo">
+        <image src="{{headImg}}"></image>
+        <text>{{nick}}</text>
+      </view>
+  </view>
+  <view class="userList">
+    <navigator url="../prize/prize?area=0">
+      <view class="list noBorder">
+        <view class="iconName">
+          <text>我的奖品</text>
+        </view>
+        <span class="arrow"></span>
+      </view>
+    </navigator>
+    <navigator url="../card/card?area=0">
+        <view class="list">
+          <view class="iconName">
+            <text>我的卡券</text>
+          </view>
+          <span class="arrow"></span>
+        </view>
+    </navigator>
+    <!--<navigator url="../contact/contact">
+      <view class="list">
+        <view class="iconName">
+          <image src="/images/userIcon4.jpg"></image>
+          <text>联系我们</text>
+        </view>
+      </view>
+    </navigator>-->
+    <navigator url="../contact/contact">
+      <view class="list">
+        <view class="iconName">
+          <text>我的游戏</text>
+        </view>
+        <span class="arrow"></span>
+      </view>
+    </navigator>
+    <navigator url="../attention/attention">
+      <view class="list noBorder marginTop">
+        <view class="iconName">
+          <text>我参加的婚礼</text>
+        </view>
+        <span class="arrow"></span>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!--底部导航-->
+    <import src="../footer/footer.wxml" />
+    <template is="footer" data="{{...footerConfig}}"/>

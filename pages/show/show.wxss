@@ -1,0 +1,97 @@
+.swiper-tab{  
+    width: 100%;   
+    text-align: center;  
+    line-height: 68rpx;
+}  
+.swiper-tab-list{  
+    font-size: 28rpx;  
+    display: inline-block;  
+    width: 25%;  
+    color: #070707;  
+}  
+.on{ 
+    color: #FF3366;
+}    
+.swiper-box{ 
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+}  
+.swiper-box view{  
+    text-align: center;  
+}
+.search{
+  padding:0 14rpx 0 18rpx;
+  height: 88rpx;
+  border-bottom:2rpx solid #D4D4D4;
+}
+.searchBox{
+  float: left;
+  width: 570rpx;
+  height: 70rpx;
+  border: 2rpx solid #C7C7C7;
+  border-radius: 33rpx;
+  box-sizing: border-box;
+}
+.searchBox span{
+  float: left;
+  width: 60rpx;
+  height: 66rpx;
+}
+.searchBox input{
+  float: left;
+  width: 500rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-size: 28rpx;
+}
+.search button{
+  float: right;
+  width: 128rpx;
+  height: 70rpx ;
+  line-height: 70rpx;
+  background-color: #E4E4E4;
+  border-radius: 0;
+  font-size: 28rpx;
+  color: #070707;
+}
+.search button:after{
+  border:none;
+}
+
+.goods{
+  overflow: hidden;
+  margin-top: 2rpx;
+}
+.goodsBox{
+  border-top: 2rpx solid #BBBBBB;
+  border-bottom: 2rpx solid #BBBBBB;
+  border-left: 2rpx solid #616161;
+  width: 50%;
+  float: left;
+  margin-left: -1rpx;
+  margin-bottom:4rpx; 
+}
+.goodsPic{
+  width: 368rpx;
+  height: 250rpx;
+}
+
+.goodsPic image{
+  width: 100%;
+  height: 100%;
+}
+.swiper-box .goodsInfo{
+  padding:16rpx 18rpx;
+  font-size: 28rpx;
+  text-align: left;
+}
+.goodsBox text{
+  height: 40rpx;
+}
+.goodsBox span{
+  display: block;
+  color:#E40D15;
+  height: 40rpx;
+}

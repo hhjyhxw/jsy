@@ -1,0 +1,69 @@
+page {
+  background: #F0F0F0;
+  padding:0;
+  border:0;
+  margin: 0;
+}
+.center{
+  padding: 40rpx 25rpx 0 25rpx;
+}
+.cardItem{
+  border-radius: 16rpx;
+  width: 700rpx;
+  height: 280rpx;
+  margin-top: 24rpx;
+  background-image: url(https://www.leiyi.club/img/jsy/card_bg01.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding:26rpx 60rpx;
+  box-sizing: border-box;
+}
+.cardTop{
+  height: 130rpx;
+  width: 100%;
+  display: flex;
+}
+.cardTop view:first-child{
+  font-size: 48rpx;
+  width: 80%;
+  margin-top: 3rpx;
+  
+}
+.cardTop view:first-child text{
+  display: block;
+  height: 48rpx;
+  width: 300rpx;
+  font-size: 32rpx;
+}
+.cardTop view:nth-of-type(2){
+  width: 20%;
+}
+.cardTop .cardTitle{
+  height: 190rpx;
+  font-size: 116rpx;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 3rpx;
+}
+.cardTop .cardTitle span{
+  display: inline-block;
+  font-size: 32rpx;
+}
+.cardBottom{
+  width: 100%;
+  font-size: 22rpx;
+}
+
+.cardBottom view text{
+  display: inline-block;
+  margin-top: 13rpx;
+}
+.cardBottom view text:nth-of-type(2){
+  float: right;
+}
+.cardTime{
+  display: block;
+  margin-top: 12rpx;
+}
